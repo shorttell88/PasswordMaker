@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='output.css') }}">
+    <title>SECRET</title>
+</head>
+<body class="m-9">
+    <p>Your password is: <i class="font-bold">{{Password.0}}</i></p>
+    <p>Your secret number is:   <i class="font-bold">{{Password.1}}</i></p>
+    <p>Don't tell anyone about it.</p>
+    <p>Make a note of this.</p>
+    <p><span class="font-bold">Important:</span> For security reasons, this app does not save your passwords; therefore, it is recommended that you write them down in a safe place.</p><br>
+    <a class="bg-red-500 p-2 rounded-sm text-white hover:scale-105 hover:bg-red-400 hover:text-black transition-all my-5" href="/"> Continue</a>
+</body>
+</html>

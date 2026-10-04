@@ -1,0 +1,22 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Configuración y secretos de Flask
+.env
+.flaskenv
+instance/
+
+# Temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Herramientas de desarrollo y pruebas
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/

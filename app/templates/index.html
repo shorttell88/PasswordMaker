@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Maker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='output.css') }}">
+</head>
+<body>
+    <main>
+        <div class="bg-red-600 p-8 text-white shadow-xl/20 ">
+            <h1 class="text-3xl py-6 font-sans font-bold text-shadow-lg md:text-5xl lg:text-8xl">Welcome to the password generator!</h1>
+            <h4 class="font-semibold text-shadow-lg">Here you can create secure passwords for your applications.</h4>
+        </div>
+        <div class="p-8">
+            <form action="/add_password" method="POST">
+                
+                <input class="rounded-sm border border-gray-500 p-1 w-10/12 my-5 hover:shadow-lg hover:border-gray-700 transition-all" type="text" name="appli" id="appli" placeholder="Aplication" required><br>
+                <input class="rounded-sm border border-gray-500 p-1 w-10/12 my-5 hover:shadow-lg hover:border-gray-700 transition-all"  type="text" name="password" placeholder="Your normal password" required><br>
+                <input class="hover:shadow-md transition-all my-4" type="checkbox" name="Spanish" id="Spanish">
+                <label for="Spanish">Include Spanish characters?</label><br>
+                <button class="bg-red-500 p-2 rounded-sm text-white hover:scale-105 hover:bg-red-400 hover:text-black transition-all">Enter</button>
+            </form>
+        </div>
+        
+        <div class="p-12">
+            <h1 class="text-center text-5xl font-bold py-5 hover:scale-105 hover:text-gray-900 transition-all">About this page.</h1>
+            <p class="text-2xl">This page is a password modifier that allows you to make passwords more secure for any application. It uses a basic mathematical algorithm to convert your standard password into a strong, more secure one.</p>
+        </div>
+
+        <div class="p-12">
+            <h1 class="text-center text-5xl font-bold py-5 hover:scale-105 hover:text-gray-900 transition-all">Problem and solution</h1>
+            <ul class="text-2xl">
+                <li><span class="font-bold">Problem:</span> Many websites used to create passwords store them in databases that can subsequently be compromised.</li>
+                <li><span class="font-bold">Solution:</span> Our platform is 100% secure and does not store any of your passwords, ensuring your protection. Furthermore, it employs simple yet powerful algorithms to generate keys that are computationally impossible to crack via brute-force or password spraying attacks.</li>
+            </ul>
+        </div>
+
+    </main>
+</body>
+</html>
