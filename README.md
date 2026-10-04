@@ -1,4 +1,4 @@
-# CryptoPass Generator
+# Password Maker
 <img width="1863" height="522" alt="image" src="https://github.com/user-attachments/assets/acf3c49e-b69b-48bb-bbee-f6363f0fc3eb" />
 
 Una aplicación web ligera y segura desarrollada en **Flask** que genera contraseñas robustas. A diferencia de los generadores tradicionales que crean caracteres aleatorios que el usuario debe almacenar, este sistema actúa como un generador criptográfico: utiliza una clave maestra, el nombre del servicio y un número semilla pseudoaleatorio para calcular siempre la misma contraseña segura de manera matemática, eliminando la necesidad de guardar datos sensibles en servidores.
@@ -24,8 +24,8 @@ El núcleo de la aplicación utiliza el **número semilla** y la contraseña ori
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com
-   cd generador-contrasenas-flask
+   git clone https://github.com/shorttell88/PasswordMaker
+   cd PasswordMaker
    ```
 
 2. **Crear y activar un entorno virtual:**
